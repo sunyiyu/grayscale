@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>重大灾难网站设置为无色</title>
+    <script src="grayscale.js"></script>
+    <script>
+        window.onload=function(){
+            grayscale(document.getElementById('body'));
+        }
+    </script>
+    <style>
+        html {
+            filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+            -webkit-filter: grayscale(1);
+        }
+        .main{
+            height: 500px;
+            padding: 10px;
+            border: 1px solid gray;
+            display: flex;
+            display: -webkit-flex; /*Safari*/
+            background-color: red;
+        }
+        .content{
+            background: orange;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+<body id="body">
+<p>多跟轴心（多行）的对齐方式。如果项目只有一根轴线，该属性不起作用。</p>
+<div class="main" id="myEl">
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+</div>
+</body>
+
+</html>
